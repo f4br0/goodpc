@@ -24,6 +24,18 @@
             "titulo": "intel core i5 9600k4",
             "precio": "4'000.000",
             "descripcion": "descripcion2"
+        },
+        {
+            "img": "https://static.userbenchmark.com/resources/static/cpu/Intel-Core-i5-9600K.jpg",
+            "titulo": "intel core i5 9600k4",
+            "precio": "4'000.000",
+            "descripcion": "descripcion2"
+        },
+        {
+            "img": "https://static.userbenchmark.com/resources/static/cpu/Intel-Core-i5-9600K.jpg",
+            "titulo": "intel core i5 9600k4",
+            "precio": "4'000.000",
+            "descripcion": "descripcion2"
         }
     ]
 }

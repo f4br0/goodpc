@@ -10,6 +10,7 @@ import SEO from "../components/seo"
 
 const Container = styled.div`
 display: flex;
+overflow-x: auto;
 `
 
 const IndexPage = () => (

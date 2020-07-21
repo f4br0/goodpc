@@ -33,14 +33,16 @@ const Button = styled.button`
 
 
 const Card = (props) => (
-  <Container>
-    <img
-      style={{ maxWidth: '200px' }}
-      src={props.img} />
-    <h3>{props.titulo}</h3>
-    <Price>{props.precio}</Price>
-    <p>{props.descripcion}</p>
-  </Container>
+  <div style={{ padding: '20px' }}>
+    <Container>
+      <img
+        style={{ maxWidth: '200px' }}
+        src={props.img} />
+      <h3>{props.titulo}</h3>
+      <Price>{props.precio}</Price>
+      <p>{props.descripcion}</p>
+    </Container>
+  </div>
 )
 
 Card.propTypes = {
