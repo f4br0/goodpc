@@ -5,25 +5,49 @@
             "img": "https://static.userbenchmark.com/resources/static/cpu/Intel-Core-i5-9600K.jpg",
             "titulo": "intel core i5 9600k",
             "precio": "1'000.000",
-            "descripcion": "descripcion"
+            "descripcion": "descripcion",
+            "caracteristicas": {
+                "nucleos": 8,
+                "nucleos1": 8,
+                "nucleos2": 8,
+                "nucleos3": 8
+            }
         },
         {
             "img": "https://static.userbenchmark.com/resources/static/cpu/Intel-Core-i5-9600K.jpg",
             "titulo": "intel core i5 9600k2",
             "precio": "2'000.000",
-            "descripcion": "descripcion2"
+            "descripcion": "descripcion2",
+            "caracteristicas": {
+                "nucleos": 8,
+                "nucleos1": 8,
+                "nucleos2": 8,
+                "nucleos3": 8
+            }
         },
         {
             "img": "https://static.userbenchmark.com/resources/static/cpu/Intel-Core-i5-9600K.jpg",
-            "titulo": "intel core i5 9600k3",
-            "precio": "3'000.000",
-            "descripcion": "descripcion2"
+            "titulo": "intel core i5 9600k2",
+            "precio": "2'000.000",
+            "descripcion": "descripcion2",
+            "caracteristicas": {
+                "nucleos": 8,
+                "nucleos1": 8,
+                "nucleos2": 8,
+                "nucleos3": 8
+            }
         },
         {
             "img": "https://static.userbenchmark.com/resources/static/cpu/Intel-Core-i5-9600K.jpg",
-            "titulo": "intel core i5 9600k4",
-            "precio": "4'000.000",
-            "descripcion": "descripcion2"
+            "titulo": "intel core i5 9600k2",
+            "precio": "2'000.000",
+            "descripcion": "descripcion2",
+            "caracteristicas": {
+                "nucleos": 8,
+                "nucleos1": 8,
+                "nucleos2": 8,
+                "nucleos3": 8
+            }
         }
     ]
 }

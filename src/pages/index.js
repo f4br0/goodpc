@@ -8,23 +8,18 @@ import Layout from "../components/layout"
 import Card from "../components/card"
 import SEO from "../components/seo"
 
-const Container = styled.div`
-display: flex;
+const Content = styled.div`
+
 `
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Container>
+    <Content>
       {JSONData.content.map((data, index) => (
-        <Card key={`content_item_${index}`} {...data} />
+        <Card key={`content_item_${index}`} {...{ ...data, index }} />
       ))}
-    </Container>
-
-
+    </Content>
     <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
   </Layout>

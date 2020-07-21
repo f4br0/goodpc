@@ -2,45 +2,68 @@ import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
-const Container = styled.div`
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
+const CardStyle = styled.div`
+  display: flex;
 `
+
+const Column = styled.div`
+  width: 100%;
+  border: dashed;
+  position: relative;
+  // text-align: center;
+  `
+const Content = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  `
 
 const Price = styled.p`
-color: grey;
-font-size: 22px;
-`
-
-const Button = styled.button`
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
   text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
+  color: grey;
+  font-size: 1.2rem;
 `
 
-// .card button:hover {
-//   opacity: 0.7;
-// }
-
+const isReverse = (i) => {
+  if ((i + 1) % 2 === 0) {
+    return 'row-reverse';
+  } else {
+    return '';
+  }
+}
 
 const Card = (props) => (
-  <Container>
-    <img
-      style={{ maxWidth: '200px' }}
-      src={props.img} />
-    <h3>{props.titulo}</h3>
-    <Price>{props.precio}</Price>
-    <p>{props.descripcion}</p>
-  </Container>
+  <CardStyle style={{
+    flexDirection: isReverse(props.index),
+  }} >
+    <Column>
+      <Content>
+        <img
+          src={props.img}
+          alt={props.titulo}
+        />
+        <Price>$ {props.precio}</Price>
+      </Content>
+    </Column>
+    <Column>
+      {/* <p>{props.descripcion}</p> */}
+      <h2>{props.titulo}</h2>
+      <table>
+        <tbody>
+          {Object.keys(props.caracteristicas).map(k => (<tr >
+            <td>
+              <span>{k}</span>
+            </td>
+            <td>
+              <span >{props.caracteristicas[k]}</span>
+            </td>
+          </tr>))}
+        </tbody></table>
+    </Column>
+  </CardStyle >
+
+
 )
 
 Card.propTypes = {

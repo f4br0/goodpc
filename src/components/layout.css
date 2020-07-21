@@ -1,5 +1,7 @@
 html {
   font-family: sans-serif;
+  font-weight: 600;
+  font-style: normal;;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -200,7 +202,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: Roboto Slab;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -219,6 +221,8 @@ img {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+  margin: auto;
+  display: block;
 }
 h1 {
   margin-left: 0;
@@ -253,6 +257,7 @@ h2 {
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
   line-height: 1.1;
+  text-align: center;
 }
 h3 {
   margin-left: 0;
@@ -615,8 +620,38 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
   }
 }
+/* my style */
+
+nav {
+  background: black;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+nav ul {
+  background: black;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+nav li {
+  background: black;
+	display: block;
+	float: right;
+	padding: 0.65rem;
+	position: relative;
+	text-decoration: none;
+  transition-duration: 0.5s;
+  margin-bottom: unset;
+}
+  
